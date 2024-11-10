@@ -1,4 +1,4 @@
-"""Модуль с функцией для копирования данных из файла"""
+"""Модуль с функцией для копирования данных из файла."""
 
 import os
 
@@ -12,17 +12,16 @@ def copy_file(data_file, output_file):
         
     Returns:
         bool: Результат копирования данных.
-
-    Raises:
-        FileNotFoundError: Если файл data_file не найден.
     """
 
     try:
         if os.path.isfile(data_file):
             with open(data_file, 'r') as f_in, open(output_file, 'w') as f_out:
-                print(f"Копирование данных из {data_file} в {output_file}")
+                print(f"--> Копирование данных из {data_file} в {output_file}...")
+
                 for line in f_in:
                     f_out.write(line)
+
                 return True
         else:
             raise FileNotFoundError(f"Файл {data_file} не найден!")
@@ -30,6 +29,6 @@ def copy_file(data_file, output_file):
         print(e)
         return False
     finally:
-        print("Закрытие файлов...")
+        print("--> Закрытие файлов...")
         f_in.close()
         f_out.close()

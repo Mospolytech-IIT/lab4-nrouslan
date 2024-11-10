@@ -10,9 +10,6 @@ def calculate_discount(price, discount_percentage):
 
     Returns:
         float: Скидка на цену.
-
-    Raises:
-        ValueError: Если цена или процент скидки отрицательны.
     """
 
     try:
