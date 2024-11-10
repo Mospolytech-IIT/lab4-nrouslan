@@ -1,9 +1,9 @@
 """Модуль, являющийся точкой входа в программу для тестирования функций."""
 
-from lib.divide import divide
-from lib.get_name_by_id import get_name_by_id
-from lib.calculate_discount import calculate_discount
-from lib.copy_file import copy_file
+from funcs.divide import divide
+from funcs.get_name_by_id import get_name_by_id
+from funcs.calculate_discount import calculate_discount
+from funcs.copy_file import copy_file
 
 if __name__ == "__main__":
     try:
