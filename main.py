@@ -7,6 +7,7 @@ from funcs.copy_file import copy_file
 from funcs.get_element_from_list import get_element_from_list
 from funcs.generate_password import generate_password
 from funcs.slice import slice
+from funcs.sort_within_range import sort_within_range
 
 if __name__ == "__main__":
     try:
@@ -50,3 +51,12 @@ if __name__ == "__main__":
     print(f"slice(''): {slice('')}")
     print(f"slice([]): {slice([])}")
     print(f"slice([1, 2, 3], -1, 2): {slice([1, 2, 3], -1, 2)}")
+
+    print("\n---\n")
+
+    print(f"sort_within_range('', 3, 7): {sort_within_range('', 3, 7)}")
+    print(f"sort_within_range([], 3, 7): {sort_within_range([], 3, 7)}")
+    print("sort_within_range([5, 1, 8, 3, 6, 2, 9, 4, 7], -3, -7): " +
+          f"{sort_within_range([5, 1, 8, 3, 6, 2, 9, 4, 7], -3, -7)}")
+
+    print("\n---\n")
