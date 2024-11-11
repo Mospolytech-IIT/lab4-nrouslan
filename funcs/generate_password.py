@@ -3,7 +3,7 @@
 import random
 import string
 
-# TODO: Обрабатывать еще один тип исключения, или взять под другое задание
+# ЗАДАНИЕ 5.
 
 def generate_password(
     length,

@@ -2,6 +2,8 @@
 
 import os
 
+# ЗАДАНИЕ 3.
+
 def copy_file(data_file, output_file):
     """
     Копирует данные из data_file в output_file.

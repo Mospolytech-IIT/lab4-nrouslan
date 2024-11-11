@@ -3,6 +3,8 @@
 import os
 from exceptions.InvalidFileException import InvalidFileException
 
+# ЗАДАНИЯ 6 И 8.
+
 def read_file(filename):
     """
     Читает файл и выводит его содержимое в консоль.

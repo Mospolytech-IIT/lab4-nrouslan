@@ -2,6 +2,8 @@
 
 from exceptions.IncorrectInputException import IncorrectInputException
 
+# ЗАДАНИЯ 7 И 8.
+
 def read_age(minAge, maxAge):
     """
     Читает ввод возраста пользователя с клавиатуры.

@@ -2,7 +2,7 @@
 
 from exceptions.InsufficientFundsException import InsufficientFundsException
 
-# TODO: Добавить доку по выскакивающим ошибкам
+# ЗАДАНИЯ 6 И 8.
 
 class BankAccount:
     """Класс банковского счета."""
@@ -16,6 +16,9 @@ class BankAccount:
         
         Args:
             count (float): Количество денег.
+        
+        Raises:
+            InsufficientFundsException: Когда на счету недостаточно средств.
         """
 
         if count > self.balance:
