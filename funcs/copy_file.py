@@ -14,6 +14,9 @@ def copy_file(data_file, output_file):
         bool: Результат копирования данных.
     """
 
+    f_in = None
+    f_out = None
+
     try:
         if os.path.isfile(data_file):
             with open(data_file, 'r') as f_in, open(output_file, 'w') as f_out:
@@ -30,5 +33,7 @@ def copy_file(data_file, output_file):
         return False
     finally:
         print("--> Закрытие файлов...")
-        f_in.close()
-        f_out.close()
+        if f_in:
+            f_in.close()
+        if f_out:
+            f_out.close()
